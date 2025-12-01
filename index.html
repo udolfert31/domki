@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drewniane Domy z Bali | Udolfert – Naturalnie. Pięknie. Na lata.</title>
+    <meta name="description" content="Budujemy i montujemy domy z bali w Polsce, Ukrainie i Europie. Od producenta – 15 lat doświadczenia. Tel: +48 505 476 246">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; color: #333; line-height: 1.6; background: #f9f9f9; }
+        header { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80') center/cover no-repeat; height: 100vh; color: white; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+        .header-text h1 { font-size: 3.5em; margin-bottom: 10px; text-shadow: 2px 2px 8px rgba(0,0,0,0.7); }
+        .header-text h1 span { font-size: 0.6em; display: block; margin-top: 5px; color: #ddd; }
+        .header-text p { font-size: 1.4em; margin: 20px 0; max-width: 800px; text-shadow: 1px 1px 4px rgba(0,0,0,0.5); }
+        .contacts { font-size: 1.8em; margin-top: 30px; }
+        .contacts a { color: #8B4513; background: #D2B48C; padding: 15px 30px; text-decoration: none; border-radius: 50px; font-weight: bold; display: inline-block; margin: 10px; transition: background 0.3s; }
+        .contacts a:hover { background: #A0522D; }
+        .gallery { padding: 60px 20px; max-width: 1200px; margin: 0 auto; text-align: center; }
+        .gallery h2 { font-size: 2.5em; margin-bottom: 40px; color: #8B4513; }
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .gallery-item { position: relative; overflow: hidden; border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .gallery-item img { width: 100%; height: 250px; object-fit: cover; transition: transform 0.3s; cursor: pointer; }
+        .gallery-item img:hover { transform: scale(1.05); }
+        .gallery-item p { position: absolute; bottom: 10px; left: 10px; right: 10px; background: rgba(0,0,0,0.7); color: white; padding: 10px; border-radius: 5px; font-size: 1.1em; }
+        .cta { background: #8B4513; color: white; padding: 40px; text-align: center; font-size: 1.5em; }
+        .cta a { color: white; background: #D2B48C; padding: 15px 30px; text-decoration: none; border-radius: 50px; font-weight: bold; margin: 0 10px; }
+        footer { background: #333; color: white; text-align: center; padding: 20px; font-size: 1em; }
+        @media (max-width: 768px) { .header-text h1 { font-size: 2.5em; } .header-text p { font-size: 1.2em; } .contacts { font-size: 1.4em; } .gallery h2 { font-size: 2em; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-text">
+            <h1>Drewniane Domy z Bali<br><span>– Naturalnie. Pięknie. Na lata.</span></h1>
+            <p>Budujemy i montujemy domy z okrągłego i ciosanego bala<br>w Polsce, na Ukrainie i w całej Europie.<br>Pod klucz albo tylko ściany – jak chcesz. Od producenta z 15+ lat doświadczenia.</p>
+            <div class="contacts">
+                <a href="tel:+48505476246">📞 +48 505 476 246 (WhatsApp/Viber)</a><br>
+                <a href="mailto:udolfert31@gmail.com">✉️ udolfert31@gmail.com</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="gallery">
+        <h2>Nasze realizacje</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://i.imgur.com/abc123.jpg" alt="Dom z bali w budowie" onclick="openModal(this.src, 'Dom z bali 80m² – montaż w Polsce')">
+                <p>Dom z bali 80m² – Zakopane 2024</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.imgur.com/def456.jpg" alt="Sauna z bali" onclick="openModal(this.src, 'Sauna z bali')">
+                <p>Sauna z bali – ręcznie ciosane</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.imgur.com/ghi789.jpg" alt="Altana ogrodowa" onclick="openModal(this.src, 'Altana ogrodowa')">
+                <p>Altana ogrodowa – Karpaty</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.imgur.com/jkl012.jpg" alt="Dom letniskowy" onclick="openModal(this.src, 'Dom letniskowy')">
+                <p>Dom letniskowy 50m² – Ukraina</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Dom w górach" onclick="openModal(this.src, 'Dom w górach')">
+                <p>Dom w górach – gotowy projekt</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Drewniany domek" onclick="openModal(this.src, 'Drewniany domek')">
+                <p>Drewniany domek z tarasem</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <p>Chcesz swój dom marzeń? Zadzwoń już dziś!</p>
+        <a href="tel:+48505476246">ZAMÓW ROZMOWĘ</a>
+        <a href="mailto:udolfert31@gmail.com">WYŚLIJ WIADOMOŚĆ</a>
+    </section>
+
+    <footer>
+        © 2025 Drewniane Domy z Bali | Udolfert | +48 505 476 246 | Wszystkie prawa zastrzeżone.
+    </footer>
+
+    <script>
+        function openModal(imgSrc, caption) {
+            const modal = document.createElement('div');
+            modal.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.9);display:flex;align-items:center;justify-content:center;z-index:9999;';
+            modal.innerHTML = `<img src="${imgSrc}" style="max-width:90%;max-height:90%;border-radius:10px;"><div style="position:absolute;bottom:20px;color:white;font-size:1.5em;">${caption}</div><span onclick="this.parentElement.remove()" style="position:absolute;top:20px;right:20px;color:white;font-size:2em;cursor:pointer;">&times;</span>`;
+            document.body.appendChild(modal);
+        }
+    </script>
+</body>
+</html>
